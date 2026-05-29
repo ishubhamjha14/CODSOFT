@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>IRIS AI CLASSIFIER PRO</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+<div class="left">
+
+<h1>🌸 IRIS AI</h1>
+
+<h2>Flower Classification System</h2>
+
+<p>
+Artificial Intelligence powered flower recognition system
+using Machine Learning.
+</p>
+
+<div class="stats">
+
+<div class="box">
+<h3>150</h3>
+<span>Samples</span>
+</div>
+
+<div class="box">
+<h3>3</h3>
+<span>Species</span>
+</div>
+
+<div class="box">
+<h3>100%</h3>
+<span>Accuracy</span>
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Predict Flower</h2>
+
+<input
+type="number"
+step="0.1"
+id="sepal_length"
+placeholder="Sepal Length">
+
+<input
+type="number"
+step="0.1"
+id="sepal_width"
+placeholder="Sepal Width">
+
+<input
+type="number"
+step="0.1"
+id="petal_length"
+placeholder="Petal Length">
+
+<input
+type="number"
+step="0.1"
+id="petal_width"
+placeholder="Petal Width">
+
+<button onclick="predictFlower()">
+🌸 Predict
+</button>
+
+<div id="result"></div>
+
+<img id="flowerImage">
+
+<div id="description"></div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
