@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Rating AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- BACKGROUND VIDEO -->
+
+    <video autoplay muted loop playsinline id="bg-video">
+
+        <source src="assets/cinema.mp4" type="video/mp4">
+
+    </video>
+
+    <!-- DARK OVERLAY -->
+
+    <div class="overlay"></div>
+
+    <!-- PARTICLES -->
+
+    <div class="particles"></div>
+
+    <!-- MAIN CONTAINER -->
+
+    <div class="container">
+
+        <!-- LEFT SECTION -->
+
+        <div class="left-section">
+
+            <h1 class="glow-text">
+                🎬 MOVIE AI
+            </h1>
+
+            <h2 class="typing">
+                Predict IMDb ratings using Artificial Intelligence
+            </h2>
+
+            <div class="line"></div>
+
+            <p>
+                Experience a next-generation cinematic AI system
+                powered by Machine Learning, futuristic animations,
+                immersive glassmorphism UI, and real-time movie
+                rating predictions.
+            </p>
+
+            <div class="stats">
+
+                <div class="stat-box">
+
+                    <h3>10K+</h3>
+
+                    <span>Movies</span>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <h3>AI</h3>
+
+                    <span>Powered</span>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <h3>ML</h3>
+
+                    <span>Prediction</span>
+
+                </div>
+
+            </div>
+
+            <div class="footer">
+
+                Developed by
+                <span>Shubham Kumar Jha 🚀</span>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT SECTION -->
+
+        <div class="card">
+
+            <div class="card-glow"></div>
+
+            <h3>Movie Details</h3>
+
+            <input
+                type="text"
+                id="genre"
+                placeholder="Genre (Drama, Action, Comedy...)"
+            >
+
+            <input
+                type="text"
+                id="director"
+                placeholder="Director Name"
+            >
+
+            <input
+                type="text"
+                id="actor"
+                placeholder="Actor Name"
+            >
+
+            <input
+                type="number"
+                id="duration"
+                placeholder="Duration in Minutes"
+            >
+
+            <button onclick="predictRating()">
+
+                ⭐ Predict Rating
+
+            </button>
+
+            <div id="loader"></div>
+
+            <div id="result"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
